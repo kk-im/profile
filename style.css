@@ -15,24 +15,35 @@ h1, h2, h3 {
   line-height: 1;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
+  margin: 0 0 30px 0;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.25em;
+  font-weight: 300;
 }
 
 h3 {
   font-size: 1.1em;
+  font-style: italic;
 }
 
-.card-1 {
+.margin {
+  margin-bottom: 30px;
+}
+
+.alignment {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.card-1 {
   padding-bottom: 30px;
   border-bottom: 1px solid #000;
+  margin-bottom: 20px;
 }
 
 .card-1 img {
@@ -41,6 +52,12 @@ h3 {
 
 .card-1 img:hover {
   border: 1px solid black;
+}
+
+.greeting {
+  width: 85%;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
 }
 
 a {
@@ -57,6 +74,16 @@ button {
   padding: 10px;
   text-transform: uppercase;
   border: 1px solid black;
+  border-radius: 3px;
+  cursor: cell;
+}
+
+i {
+  color: black;
+}
+
+button:hover {
+  background-color: rgba(255, 228, 196, 0.527);
 }
 
 .container {
