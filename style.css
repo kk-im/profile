@@ -1,17 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 
 body {
-  background-color: blanchedalmond;
-  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1em;
   line-height: 1.2;
-  font-weight: 300;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 h1, h2, h3 {
-  font-size: 1.2em;
   line-height: 1;
   font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.card-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.card-1 img {
+  border: 1px solid black;
+}
+
+.card-1 img:hover {
+  border: 1px solid black;
 }
 
 a {
@@ -25,12 +54,18 @@ a:hover {
 
 button {
   background-color: transparent;
-  padding: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid black;
 }
 
 .container {
   width: 500px;
   margin: 30px auto;
+}
+
+.description {
+  margin: 30px 0;
 }
 
 .list-inline > li {
@@ -63,4 +98,36 @@ ul {
     width: 300px;
     margin: 30px auto;
   }
+}
+
+@-webkit-keyframes pulse-grow-on-hover {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes pulse-grow-on-hover {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.pulse-grow-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse-grow-on-hover:hover, .pulse-grow-on-hover:focus, .pulse-grow-on-hover:active {
+  -webkit-animation-name: pulse-grow-on-hover;
+  animation-name: pulse-grow-on-hover;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
